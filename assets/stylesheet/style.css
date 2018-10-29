@@ -229,3 +229,44 @@ a:link, a:visited {
 	font-weight: 300;
 }
 
+/* Main Grid */
+
+.main__grid1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.hero {
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 1;
+	grid-template-rows: 1;
+}
+
+.hero1 {
+	grid-column: span 2;		
+}
+
+.main__grid__image {
+	width: 100%;
+	/* height: 100%; */
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;	
+}
+
+
+
+.main__grid__content {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	position: relative;		
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	place-content: center;	
+}
+
+
+
+
+
