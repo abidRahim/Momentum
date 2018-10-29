@@ -7,24 +7,42 @@
     <title>Momentum</title>
     <link rel="stylesheet" href="assets/stylesheet/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Dropdown</a></li>
-          <li><a href="#">Generic</a></li>
-          <li><a href="#">Elements</a></li>
-        </ul>
-      </nav> 
-      <h1>
-        <a href="#">Momentum <span>by Pixelarity</span></a>
-      </h1>
+      <div class="header__wrapper">
+        <nav class="header__nav">
+          <ul>              
+            <li><a id="current" href="#">Home</a></li>
+            <li class="dropdown-parent"><a href="#"><i class="fas fa-angle-down fa-lg"></i>Dropdown</a>
+              <ul class="dropdown">
+                <li><a href="#">Option One</a></li>
+                <li><a href="#">Option Two</a></li>
+                <li><a href="#">Option Three</a></li>
+                <li class="parent__sub-dropdown"><a href="#">Submenu</a>              
+                  <ul class="sub-dropdown">
+                    <li><a href="#">Option One</a></li>
+                    <li><a href="#">Option Two</a></li>
+                    <li><a href="#">Option Three</a></li>
+                    <li><a href="#">Option Four</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="#">Generic</a></li>
+            <li><a href="#">Elements</a></li>
+          </ul>
+        </nav> 
+        <h1>
+          <a class="logo" href="#">Momentum <span>by Pixelarity</span></a>
+        </h1>
+      </div>
     </header>
 
     <main>
-      <section>
+      <section class="grid1">
         <aside>
           <div>
             <img src="assets/media/images/pic01.jpg" alt="Highway">
@@ -83,14 +101,14 @@
           <p>Nunc et lorem mauris, fringilla in aliquam at, euismod in habitant morbi tristique senectus amet malesuada commodo lorem ipsum dolor amet.</p>      
         </aside>
         <aside>
-          <img src="assets/media/images/pic05.jpg" alt="Buildings">
+          <img src="assets/media/images/pic06.jpg" alt="Buildings">
 
           <h3>Phasellus vitae lorem</h3>
 
           <p>Nunc et lorem mauris, fringilla in aliquam at, euismod in habitant morbi tristique senectus amet malesuada commodo lorem ipsum dolor amet.</p>      
         </aside>
         <aside>
-          <img src="assets/media/images/pic06.jpg" alt="Coffee">
+          <img src="assets/media/images/pic07.jpg" alt="Coffee">
 
           <h3>Magna donec faucibus</h3>
 
@@ -132,6 +150,7 @@
             <li><a class="fab fa-facebook-f" href="#"><span>facebook.com/untitled-tld<span></a></li>
             <li><a class="fab fa-linkedin-in" href="#"><span>linkedin.com/untitled-tld</span></a></li>
             <li><a class="fas fa-phone"><span>(000) 000-0000</span></a></li>
+            
           </ul>
           <ul>
             <li><a class="fas fa-map-marker-alt" href="#"><span>Untitled</span></a></li>  
